@@ -1,0 +1,28 @@
+###
+POST http://localhost:4000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Thomas Edison",
+    "age":"73",
+    "email":"thomasedison@email.com"
+}
+
+###
+GET http://localhost:4000/api/users HTTP/1.1
+
+###
+GET http://localhost:4000/api/users/639c6b9522749a5b3b6c602f HTTP/1.1
+
+###
+PUT http://localhost:4000/api/users/639c6b9522749a5b3b6c602f HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Thomas Eddisson",
+    "age":73,
+    "email":"thomasedison@email.com"
+}
+
+###
+DELETE http://localhost:4000/api/users/639c71f3a9417151b7b9f0a2 HTTP/1.1
